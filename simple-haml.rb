@@ -1,7 +1,7 @@
 gem 'haml-rails'
 
 rails_command "generate haml:application_layout convert"
-run "rm app/views/layouts/application.html.erb"
+remove_file "app/views/layouts/application.html.erb"
 
 environment do <<-CODE
   config.generators do |g|
